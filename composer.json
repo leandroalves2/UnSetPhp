@@ -1,0 +1,20 @@
+{
+    "name": "leandro/unsetphp",
+    "description": "Curso PHP 8 Unset",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "sistema\\": "sistema/"
+        }
+    },
+    "authors": [
+        {
+            "name": "leandro"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "pecee/simple-router": "dev-master",
+        "twig/twig": "^3.0"
+    }
+}

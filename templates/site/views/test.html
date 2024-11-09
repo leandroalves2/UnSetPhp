@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{titulo}}</h1>
+    <p>Hoje é dia <span id="data"></span>.</p>
+
+    <script>
+        // Criar uma nova instância de Date para pegar a data atual
+        var dataAtual = new Date();
+        
+        // Formatar a data
+        var dia = dataAtual.getDate();
+        var mes = dataAtual.toLocaleString('default', { month: 'long' }); // Pega o mês por extenso
+        var ano = dataAtual.getFullYear();
+        
+        // Exibir a data no formato "dia de mês de ano"
+        document.getElementById('data').innerText = dia + ' de ' + mes + ' de ' + ano;
+    </script>
+
+    <h2>{{ url() }}</h2>
+    <h1>{{saudacao()}}</h1>
+</body>
+</html>
