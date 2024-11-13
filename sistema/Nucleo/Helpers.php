@@ -19,8 +19,9 @@ class Helpers
         return $cpf = preg_replace('/\D/', '', $cpf);
     }
 
-    public static function url() : string {
-        return 'Teste funcion';
+   public static function url(string $path = '') : string
+    {
+        return $path; 
     }
 
 
